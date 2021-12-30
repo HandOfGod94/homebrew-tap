@@ -5,21 +5,21 @@
 class Kafkatail < Formula
   desc "tail kafka logs from any topic, any wire format on local console"
   homepage "https://github.com/HandOfGod94/kafkatail"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.4/kafkatail_0.1.4_Darwin_x86_64.tar.gz"
-      sha256 "42dfb3351a6e8cf85f946769df84bbab10e5ee3fc57783f3b98be4b28a5444cc"
+      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.5/kafkatail_0.1.5_Darwin_x86_64.tar.gz"
+      sha256 "6e1f768911c4ded70e230f099a74e1046a34b33643b8460d7eccff8b11278179"
 
       def install
         bin.install "kafkatail"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.4/kafkatail_0.1.4_Darwin_arm64.tar.gz"
-      sha256 "87d16b2f4556d14a5be7433276786b02a5525d354ca9563ce3137b5b5eff22b6"
+      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.5/kafkatail_0.1.5_Darwin_arm64.tar.gz"
+      sha256 "e9085060403e69d0899e10efb4f91410e870c280b4537729ebf9bc20880c07b4"
 
       def install
         bin.install "kafkatail"
@@ -28,17 +28,17 @@ class Kafkatail < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.4/kafkatail_0.1.4_Linux_arm64.tar.gz"
-      sha256 "6fb79530ab71c2ce6ac1d22c1f82acee156abf718bd69059ed489efddf6fd203"
+    if Hardware::CPU.intel?
+      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.5/kafkatail_0.1.5_Linux_x86_64.tar.gz"
+      sha256 "f4a4575b6a5e54f5847e77972c99968d78b3efa5e48035e5c18225b367e130f2"
 
       def install
         bin.install "kafkatail"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.4/kafkatail_0.1.4_Linux_x86_64.tar.gz"
-      sha256 "9159a9e489b95843a7c27a4b0f2c7afe04beece35daba16c9749fc0eef5e5dc8"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/HandOfGod94/kafkatail/releases/download/v0.1.5/kafkatail_0.1.5_Linux_arm64.tar.gz"
+      sha256 "a05eadb8da2c02d2ffb6091076ceaf0f99be4f0fe0afd4dbca621c2f1eb19d68"
 
       def install
         bin.install "kafkatail"
