@@ -5,43 +5,43 @@
 class GhJiraChangelog < Formula
   desc "Changelog generator using jira issues"
   homepage "https://github.com/HandOfGod94/gh-jira-changelog"
-  version "0.3.2"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.3.2/gh-jira-changelog_v0.3.2_darwin-arm64"
-      sha256 "a01f6de60e3f4aea0659ed3594f5f769b018412a83e1c77c785b33049aedd803"
+    if Hardware::CPU.intel?
+      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_darwin-amd64"
+      sha256 "61cf9b862d3f7647ccff836517d61352174c574f3ef734b04e22f6de982f54d8"
 
       def install
-        bin.install "gh-jira-changelog_v0.3.2_darwin-arm64" => "gh-jira-changelog"
+        bin.install "gh-jira-changelog_v0.4.0_darwin-amd64" => "gh-jira-changelog"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.3.2/gh-jira-changelog_v0.3.2_darwin-amd64"
-      sha256 "122aa101f5d3119c7412bb31a3c3209835efb5c3b38eccba8dcc25fdc3c3305d"
+    if Hardware::CPU.arm?
+      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_darwin-arm64"
+      sha256 "6f9f7d83c84d37c24e6d0eb9fd153dceb5ad4adb8b25551c632a31e34a925c19"
 
       def install
-        bin.install "gh-jira-changelog_v0.3.2_darwin-amd64" => "gh-jira-changelog"
+        bin.install "gh-jira-changelog_v0.4.0_darwin-arm64" => "gh-jira-changelog"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.3.2/gh-jira-changelog_v0.3.2_linux-arm64"
-      sha256 "8ac9d61ef97a9c9f1e252fb4afa4ab3066aff927c0f336b151c9a6524f66fc84"
+    if Hardware::CPU.intel?
+      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_linux-amd64"
+      sha256 "afc0b1b4a3d3f9a93462a7dda1493a170de68b99db33136ed88f3d80201190ea"
 
       def install
-        bin.install "gh-jira-changelog_v0.3.2_linux-arm64" => "gh-jira-changelog"
+        bin.install "gh-jira-changelog_v0.4.0_linux-amd64" => "gh-jira-changelog"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.3.2/gh-jira-changelog_v0.3.2_linux-amd64"
-      sha256 "f0a70adfebe1cdeae8ea141e1a934e0d6e58c946508fb1e81470cb0b0f92a7a5"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_linux-arm64"
+      sha256 "9072933020051b9ca359bf1765c864810f68d9383f4b67fbdc1048841f792cc7"
 
       def install
-        bin.install "gh-jira-changelog_v0.3.2_linux-amd64" => "gh-jira-changelog"
+        bin.install "gh-jira-changelog_v0.4.0_linux-arm64" => "gh-jira-changelog"
       end
     end
   end
