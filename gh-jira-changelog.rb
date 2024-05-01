@@ -11,7 +11,7 @@ class GhJiraChangelog < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_darwin-amd64"
-      sha256 "61cf9b862d3f7647ccff836517d61352174c574f3ef734b04e22f6de982f54d8"
+      sha256 "bdcf0ab7528a72f222d85f900e5a7c1f6d1fb25061302a8e8f7320d962f1babb"
 
       def install
         bin.install "gh-jira-changelog_v0.4.0_darwin-amd64" => "gh-jira-changelog"
@@ -19,7 +19,7 @@ class GhJiraChangelog < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_darwin-arm64"
-      sha256 "6f9f7d83c84d37c24e6d0eb9fd153dceb5ad4adb8b25551c632a31e34a925c19"
+      sha256 "681369af9f3f97312f3feeb7ed7c179ff6a506c6ed3a14f581fe8dd6a06ce7d3"
 
       def install
         bin.install "gh-jira-changelog_v0.4.0_darwin-arm64" => "gh-jira-changelog"
@@ -30,7 +30,7 @@ class GhJiraChangelog < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_linux-amd64"
-      sha256 "afc0b1b4a3d3f9a93462a7dda1493a170de68b99db33136ed88f3d80201190ea"
+      sha256 "1793ef12815e29437d408ce370bb47ad8b1a96af362c184b1d7588aa6dd0e192"
 
       def install
         bin.install "gh-jira-changelog_v0.4.0_linux-amd64" => "gh-jira-changelog"
@@ -38,7 +38,7 @@ class GhJiraChangelog < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/HandOfGod94/gh-jira-changelog/releases/download/v0.4.0/gh-jira-changelog_v0.4.0_linux-arm64"
-      sha256 "9072933020051b9ca359bf1765c864810f68d9383f4b67fbdc1048841f792cc7"
+      sha256 "86be9d8c9d043c097bd74c9443532454136cfe902d9c259ee4bc21b3f62b8c87"
 
       def install
         bin.install "gh-jira-changelog_v0.4.0_linux-arm64" => "gh-jira-changelog"
