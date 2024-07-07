@@ -13,4 +13,8 @@ class Kubeconf < Formula
   def install
     virtualenv_install_with_resources
   end
+
+  test do
+    system "#{bin}/kubeconf", "--version"
+  end
 end
