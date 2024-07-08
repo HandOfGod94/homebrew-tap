@@ -8,6 +8,7 @@ class Kubeconf < Formula
   license 'MIT'
 
   depends_on 'fzf'
+  depends_on 'jq'
   depends_on 'python@3.10'
 
   def install
