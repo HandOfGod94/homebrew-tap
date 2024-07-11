@@ -5,6 +5,7 @@ class Kubeconf < Formula
   homepage 'https://github.com/HandOfGod94/kubeconf'
   version '0.1.0'
   url 'https://github.com/HandOfGod94/kubeconf/archive/refs/tags/v0.1.0.tar.gz'
+  sha256 "75af2646e4dc6e8b87fe9b49fa7bf6adeac5157fe160c68ebd0235f8c7cc54e1"
   license 'MIT'
 
   depends_on 'fzf'
