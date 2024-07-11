@@ -4,7 +4,7 @@ class Kubeconf < Formula
   desc 'A small wrapper around fzf and kubectl to view configmap with preview'
   homepage 'https://github.com/HandOfGod94/kubeconf'
   version '0.2.0'
-  url 'https://github.com/HandOfGod94/kubeconf/archive/refs/tags/v0.1.0.tar.gz'
+  url 'https://github.com/HandOfGod94/kubeconf/archive/refs/tags/v0.2.0.tar.gz'
   license 'MIT'
 
   depends_on 'fzf'
